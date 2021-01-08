@@ -1,0 +1,8 @@
+ @echo off
+ set "path=%path%;E:\7-Zip" 
+ for\f "delims+" %%i in ('dir /b/s/a-d *.gz) do(
+ pushd "%%~dpi" 
+ 7z x "%%i"
+ )
+ pause
+ 
